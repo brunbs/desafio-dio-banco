@@ -35,7 +35,7 @@ public abstract class Conta implements IConta{
     }
 
     @Override
-    public void tranferir(double valor, Conta contaDestino) {
+    public void transferir(double valor, Conta contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
     }
